@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Tech Titans</title>
+        <title>Technovia</title>
+
+        <meta name="description" content="Tech event website">
+        <meta name="author" content="Group Project - Faithful, Stanley, Francis, Peter, CJ, ...">
+
+        <meta property="og:title" title="Technovia">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="image" href="">
+
+        <meta name="og:description" content="Tech event">
+        <meta name="og:locale" content="en_US">
+        <meta name="og:site_name" content="Technovia">
+    
+
         <link rel="stylesheet" href="style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,18 +27,18 @@
     <body>
         <header>
             <div class="logo geist">
-                Tech Titans
+                Technovia
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <nav>
                 <ul>
-                    <li><a href="#" class="reg">Register</a></li>
+                    <li><a href="#" class="reg" id="registerBtn">Register</a></li>
                 </ul>
             </nav>
         </header>
@@ -37,7 +51,7 @@
                     <hr>
                     <div class="user">
                         <div class="icons">
-                            <img src="users.png" alt="">
+                            <img src="users (1).png" alt="">
                         </div>
                         <div class="case">
                             <h3>600k+</h3>
@@ -83,11 +97,11 @@ new possibilities.
                     </p>
                 </div>
             </section>
-            <section class="what">
+            <section class="what" id="about">
                 <h1>What  We <span>Do?</span></h1>
                 <p>"Tech Titans: A dynamic team dedicated to crafting innovative solutions, driving technological progress, and empowering <br> individuals and businesses to thrive in the digital age."</p>
             </section>
-            <section class="expert" >
+            <section class="expert"  id="contact">
                 <h2>OUR TEAM</h2>
                 <h1>Meet Our Expert <span>Team</span></h1>
                 <p>"Tech Titans is a team of passionate innovators and problem-solvers, united by a shared vision to harness the power of technology <br> to create impactful solutions and inspire positive change in the world."</p>
@@ -111,10 +125,10 @@ new possibilities.
                             </div>
                         </div>
                         <div class="col">
-                            <img src="Screenshot 2024-11-19 063942 copy 1.png" alt="">
+                            <img src="_.png" alt="">
                             <div class="ex-info">
-                                <h2>Faithful</h2>
-                                <h4>Team Lead, Full Stack Dev</h4>
+                                <h2>Prince</h2>
+                                <h4>Graphics</h4>
                                 <p>"Design with purpose, <br>
                                     create with empathy."
                                 </p>
@@ -129,10 +143,10 @@ new possibilities.
                     </div><br><br>
                     <div class="row">
                         <div class="col">
-                            <img src="Screenshot 2024-11-19 063942 copy 1.png" alt="">
+                            <img src="_.png" alt="">
                             <div class="ex-info">
-                                <h2>Faithful</h2>
-                                <h4>Team Lead, Full Stack Dev</h4>
+                                <h2>Anonymous</h2>
+                                <h4>UI/UX Designer</h4>
                                 <p>"Design with purpose, <br>
                                     create with empathy."
                                 </p>
@@ -145,10 +159,10 @@ new possibilities.
                             </div>
                         </div>
                         <div class="col">
-                            <img src="Screenshot 2024-11-19 063942 copy 1.png" alt="">
+                            <img src="WhatsApp Image 2024-11-19 at 08.41.46_416579c1 copy.png" alt="">
                             <div class="ex-info">
-                                <h2>Faithful</h2>
-                                <h4>Team Lead, Full Stack Dev</h4>
+                                <h2>Ceejay</h2>
+                                <h4>Frontend</h4>
                                 <p>"Design with purpose, <br>
                                     create with empathy."
                                 </p>
@@ -164,11 +178,68 @@ new possibilities.
                 </div>
             </section>
         </main>
+        
+        <div id="popUp">
+            <div class="pop-content">
+                <h2>Register Now</h2>
+                <form method="post" action="https://script.google.com/macros/s/AKfycbwVrbRiNwxQvFFQ_Xk34vtv8oYbGtX2W5U3R6-VvD0v3mHi26pgIXzK5qX1sU5tZL0D/exec" name="Technovia">
+                    <label for="firstName"></label><br>
+                    <input type="text" placeholder="First Name" name="firstName" ><hr>
+                     <label for="lastName"></label><br>
+                    <input type="text" placeholder="Last Name" name="lastName"><hr>
+                    <label for="email"></label><br>
+                    <input type="email" placeholder="Email" name="email"><hr>
+                    <input class="check" type="checkbox" required>I agree to the terms and conditions <br><br>
+                    <button id="sub" class="btn-2">Register</button>
+                </form>
+            </div>
+        </div>
+
         <footer>
-            <br>
-            <h4>Contact us:</h4>
-            <img src="mdi-light_email.png" alt="">techtitans@gmail.com
+            <hr>
+            <h4>Contact us:</h4><br> <br>
+            <div class="contact-us">
+                    <img src="mdi-light_email.png">
+                    <p>technovia@gmail.com</p>
+                    <img src="ic_baseline-facebook (2).png">
+                    <img src="basil_instagram-solid.png">
+            </div> <br> <br>
+            <h4>Sponsors</h4><br> <br>
+            <div class="sponsors">
+                <img src="Group 22.png" alt="">
+            </div>
         </footer>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwVrbRiNwxQvFFQ_Xk34vtv8oYbGtX2W5U3R6-VvD0v3mHi26pgIXzK5qX1sU5tZL0D/exec'
+
+            const form = document.forms['Technovia']
+
+            form.addEventListener('submit', e => {
+  
+                 e.preventDefault()
+  
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thank you! Form is submitted" ))
+                .then(() => { window.location.reload(); })
+                .catch(error => console.error('Error!', error.message))
+})
+        </script>
+        <script>
+            // get register pop-up
+            var pop = document.getElementById("popUp");
+
+            //Get button that opens the popUp
+            var registerBtn = document.getElementById("registerBtn");
+
+            // Get the close pop up button
+            var close 
+
+            // Open pop up whrn the register button is clicked 
+            registerBtn.onclick = function() {
+                pop.style.display = "block";
+            }
+
+        </script>
     </body>
 
 </html>

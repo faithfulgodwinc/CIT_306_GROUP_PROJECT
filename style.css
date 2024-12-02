@@ -429,3 +429,43 @@ footer hr{
 .sponsors img{
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+    .container img {
+        display: none;
+    }
+    .team {
+      grid-template-columns: 1fr;
+    }
+    .what > p {
+      text-align: center;
+    }
+    .girl > img {
+      float: right;
+    }
+    .face > h4 {
+      font-size: 25px;
+    }
+    .face > h1 {
+      font-size: 40px;
+    }
+    .s-text {
+      float: left;
+    }
+    .girl > img {
+      float: left;
+    }
+    .reg{
+      margin: 20px;
+    }
+  }
+  
